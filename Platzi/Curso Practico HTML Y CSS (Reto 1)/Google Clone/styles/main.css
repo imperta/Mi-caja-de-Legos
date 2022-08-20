@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&family=Poppins:wght@100;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,900;1,600&display=swap');
+
+body{
+    background-color: rgb(38, 38, 41);
+    font-family: 'Inter', sans-serif; font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/566/566001.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px; height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px; height: 30px;
+}
+
+/* Contenido Principal */
+main{
+    margin-top: 150px;
+    text-align: center;
+    height: 400px;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+main .main-logo img{
+    width: 270px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid rgb(179, 179, 179) ;
+    display: flex;
+    justify-content: center;
+}
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-input-container:hover{
+    background-color: rgb(38, 38, 41);
+    box-shadow: 0 1px 10px 0;
+    border-color: rgb(227, 227, 227);
+}
+main .main-input .search-icon{
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    padding-top: 22px;
+}
+main .main-input .micro-icon{
+    background-image: url('https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    padding-top: 23px;
+}
+input{
+    background: rgb(38, 38, 41)
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block
+}
+main .main-buttons button{
+    height: 37px;
+    background-color: #303030;
+    font-size: 14px; color: rgb(255, 255, 255);
+    border:#303030 solid; border-radius: 4px;
+    margin: 5px; padding: 0 20px;
+}
+main .main-buttons button :hover{
+    border: 1px solid #3f3f3f;
+    box-shadow: 0 1px 1px black;
+}
+
+
+
+/* Footer */
+footer{
+    width: 100%; 
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    display: grid;
+    /* El grid-template-columns, acompañado de display grid, nos permite dividir nuestro contenedor y ajustar nuestro contenido en forma de cuadriculas. En este caso estan en 2 fracciones */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 14px;
+    background-color:rgb(32, 32, 32);
+    border-top: 1px solid #e4e4e4;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left{
+    justify-self: left;
+}
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: rgb(179, 179, 179);
+}
+
+
+/* @media only screen and (max-width: 3000px){
+    footer, .menu_inferior,.opcionesder, .opcionesizq{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+} */
+
